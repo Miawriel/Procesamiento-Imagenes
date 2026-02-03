@@ -1,77 +1,77 @@
-# Procesamiento Digital de Imágenes en Python
+# Procesamiento Digital de Imágenes con Python 🖼️
 
-Este repositorio contiene una práctica desarrollada en **Jupyter Notebook** donde se exploran diferentes librerías de Python para el procesamiento digital de imágenes.  
-Se aplican distintas técnicas sobre varios tipos de datos visuales, cumpliendo con los requerimientos solicitados en la actividad.
+Este proyecto forma parte de una práctica académica y consiste en explorar
+diferentes librerías de Python para el procesamiento digital de imágenes,
+aplicando técnicas variadas sobre distintos tipos de datos visuales.
 
----
+Se trabajó con arreglos numéricos, imágenes obtenidas de internet, fotografías
+locales y una secuencia de imágenes extraída de un video.
 
-## 📌 Objetivo de la práctica
+## 🧠 Descripción
 
-Explorar y aplicar técnicas de procesamiento digital de imágenes utilizando **al menos tres librerías diferentes en Python**, trabajando con:
+El objetivo principal es comprender cómo una imagen puede representarse como
+datos numéricos y cómo distintas técnicas permiten modificar, analizar o
+resaltar información visual.
 
-- Un arreglo numérico
-- Una imagen obtenida de internet
-- Una fotografía local
-- Una secuencia de imágenes (video)
+Durante el desarrollo de la práctica se realizaron los siguientes pasos
+principales:
 
-El objetivo es comprender cómo las imágenes pueden ser representadas, transformadas y analizadas mediante código.
+- Representación de imágenes como arreglos numéricos.
+- Carga y procesamiento de imágenes externas y locales.
+- Aplicación de transformaciones visuales sobre fotografías reales.
+- Generación de imágenes mediante dibujo digital.
+- Análisis de cambios en una secuencia de imágenes (video).
 
----
+## 🛠️ Librerías utilizadas
 
-## 🧰 Librerías utilizadas
+Para el desarrollo del notebook se emplearon distintas librerías, cada una con
+un propósito específico:
 
-Durante el desarrollo del notebook se utilizaron las siguientes librerías:
-
-- **NumPy**: para el manejo de arreglos y representación matricial de imágenes.
-- **OpenCV (cv2)**: para el procesamiento de imágenes y video.
-- **Pillow (PIL)**: para la creación y manipulación de imágenes mediante dibujo.
-- **Matplotlib**: para la visualización de resultados.
-
----
+- **NumPy**: manejo de arreglos y operaciones matemáticas.
+- **OpenCV (cv2)**: procesamiento de imágenes y video.
+- **Pillow (PIL)**: creación y edición de imágenes mediante dibujo.
+- **Matplotlib**: visualización de imágenes y resultados.
 
 ## 🧪 Técnicas aplicadas
 
-A lo largo del notebook se implementaron cinco técnicas distintas, cada una aplicada a un tipo de dato diferente:
+Se implementaron cinco técnicas distintas, cada una aplicada a un tipo de dato
+diferente, con el fin de cubrir todos los requerimientos de la práctica:
 
-1. **Tratamiento de un arreglo**  
-   Representación de una imagen como una matriz y modificación directa de sus valores.
+- Tratamiento directo de un arreglo que simula una imagen.
+- Procesamiento de una imagen obtenida de internet (descargada previamente).
+- Aplicación de transformaciones sobre una fotografía local.
+- Generación de una imagen desde cero utilizando dibujo digital.
+- Comparación de frames separados en el tiempo dentro de un video.
 
-2. **Procesamiento de una imagen de internet**  
-   Carga y análisis de una imagen externa descargada previamente para evitar problemas de acceso HTTP.
+Cada técnica permitió observar cómo cambia la información visual dependiendo
+del tipo de entrada y del método aplicado.
 
-3. **Procesamiento de una fotografía local**  
-   Aplicación de transformaciones sobre una imagen real almacenada localmente.
+## 📊 Resultados generales
 
-4. **Generación de imagen mediante dibujo digital**  
-   Creación de una imagen desde cero utilizando Pillow e ImageDraw.
+Los resultados muestran que las imágenes digitales pueden manipularse
+directamente como matrices de datos y que pequeñas modificaciones numéricas
+producen cambios visibles.
 
-5. **Procesamiento de una secuencia de imágenes (video)**  
-   Comparación de frames separados en el tiempo para detectar cambios visuales producidos por el movimiento y el zoom.
+En el caso del video, se observó que comparar frames consecutivos no siempre
+es suficiente para detectar cambios, por lo que fue necesario analizar frames
+más alejados en el tiempo para identificar claramente el efecto de zoom.
 
----
+La generación de imágenes mediante código demostró que no solo es posible
+procesar imágenes existentes, sino también crear contenido visual de manera
+programática.
 
-## 🔍 Resultados y observaciones
+## 📁 Requisitos
 
-- Se observó que las imágenes digitales pueden manipularse directamente como arreglos de datos.
-- Las imágenes reales y los videos presentan mayor complejidad debido al ruido, la iluminación y el movimiento.
-- En el caso del video, fue necesario comparar frames distantes para que los cambios fueran claramente perceptibles.
-- La generación de imágenes mediante código demuestra que no solo se pueden procesar imágenes existentes, sino también crear nuevas.
+Para ejecutar el notebook correctamente es necesario contar con:
 
----
+- Python 3.x
+- Librerías:
+  - `numpy`
+  - `opencv-python`
+  - `pillow`
+  - `matplotlib`
 
-## 📂 Contenido del repositorio
+Puedes instalarlas con:
 
-- `Procesamiento_Imagenes.ipynb` (Notebook principal con el desarrollo de la práctica)
-- Imágenes y video utilizados para las pruebas
-- `README.md`
-
----
-
-## ✅ Conclusión
-
-Esta práctica permitió comprender de manera práctica cómo funcionan distintas técnicas de procesamiento digital de imágenes y cómo pueden aplicarse a diferentes tipos de datos visuales.  
-El uso de múltiples librerías mostró que cada herramienta tiene fortalezas específicas, y que la correcta selección de técnicas depende del tipo de información que se desea analizar.
-
----
-
-📎 *Repositorio desarrollado como parte de una práctica académica.*
+```bash
+pip install numpy opencv-python pillow matplotlib
